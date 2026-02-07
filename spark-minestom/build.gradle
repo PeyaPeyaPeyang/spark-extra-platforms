@@ -6,8 +6,8 @@ plugins {
 }
 
 tasks.withType(JavaCompile) {
-    // override, compile targeting J21
-    options.release = 21
+    // override, compile targeting J25
+    options.release = 25
 }
 
 dependencies {

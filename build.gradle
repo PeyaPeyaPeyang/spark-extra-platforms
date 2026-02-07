@@ -5,6 +5,7 @@ plugins {
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.gradle.api.tasks.testing.logging.TestLogEvent
 
+
 allprojects {
     group = 'dev.lu15'
     version = '1.10-SNAPSHOT'

@@ -87,7 +87,7 @@ final class MinestomSparkPlugin implements SparkPlugin {
 
     @Override
     public String getVersion() {
-        return "@VERSION@";
+        return "1.10-SNAPSHOT";
     }
 
     @Override

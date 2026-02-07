@@ -4,6 +4,26 @@
 		src="https://i.imgur.com/ykHn9vx.png">
 </h1>
 
+# Spark for Minestom
+```kts
+repositories {
+    maven("https://repo.hypera.dev/snapshots/") // spark-minestom
+    maven("https://repo.lucko.me/") // spark-common
+    maven("https://oss.sonatype.org/content/repositories/snapshots/") // spark-common's dependencies
+}
+
+dependencies {
+    implementation("dev.lu15:spark-minestom:1.10-SNAPSHOT")
+}
+```
+```java
+Path directory = Path.of("spark");
+SparkMinestom spark = SparkMinestom.builder(directory)
+        .commands(true) // enables registration of Spark commands
+        .permissionHandler((sender, permission) -> true) // allows all command senders to execute all commands
+        .enable();
+```
+
 # spark-extra-platforms
 
 This repository contains implementations of [spark](https://github.com/lucko/spark) for additional platforms.
